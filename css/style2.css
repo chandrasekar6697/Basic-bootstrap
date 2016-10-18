@@ -1,0 +1,49 @@
+header{
+	background-color: black;
+}
+header h1
+{
+	color: white;
+	text-align: center;
+font-size: 45px;
+text-shadow:0px 0px 35px yellow;
+}
+
+nav li{
+
+	display: inline;
+	float: left;
+	margin-right: 10px;
+
+}
+
+nav a,ul{
+
+	text-decoration: none;
+	font-family: monospace;
+	color:white ;
+	font-size: 20px;
+	float:right;
+
+}
+nav a:hover{
+	text-decoration: none;
+
+}
+section img{
+	margin-top: 20px;
+	width: 300px;
+	height: 300px;
+
+}
+section a:hover{
+
+	opacity:0.4;
+
+}
+section {
+	font-family: monospace;
+	margin-top: 20px;
+	padding-left: 30px;
+	font-size: 40px;
+}
