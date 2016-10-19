@@ -3,11 +3,14 @@
 <html>
 	<head>
 		<title>First Website</title>
+		<link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
 		<link rel="stylesheet" href="css/960_12_col.css"/>
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/text.css"/>
 		<link rel="stylesheet" href="css/style.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
@@ -15,19 +18,19 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:700italic' rel='stylesheet' type='text/css'>
-
-	</head>
-
-
-
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+					</head>
 <style type="text/css">
 body{
-	background-image: url("s.jpg");
+	background-color: grey;
 }
 h1{
 
-	color:WHITE ;
+	color:black ;
 	font-size: 20pt;
+	font-family: 'Lobster', cursive;
 }
 
 a
@@ -41,31 +44,45 @@ a
 	width:600px;
 	padding-left: 200px;
 }
+.jumbotron{
+	background-image:url("s.jpg");
+}
 </style>
 
 <body>
 <header style="height:120px;">
 
 		<h1  ><img src="logo.png"/>Best Books</h1>
-		<nav >
-		 <ul>
-
-		       <li>
-		       <a href="secondpage.html" target="_blank">About Us</a>
-		       </li>
+		<nav class="navbar navbar-inverse" >
+			<div class="container-fluid">
+		 <ul class="nav navbar-nav">
 					 <li>
 					<a href="#">Home</a>
 					</li>
+					<li>
+					<a href="secondpage.html" target="_blank">About Us</a>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-wrench"> Update</span></a>
+	 		</li>
+	 		<li><a href="#"><span class="glyphicon glyphicon-refresh">   Profile</a></span>
+	 		</li>
+	 		<li><a href="#"><span class="glyphicon glyphicon-gift">   Invite</a></span>
+	 		</li>
+
+	 		<li class="divider"></li>
+	 		<li><a href="#"><span class="glyphicon glyphicon-off">  Signout</a></span></li>
+		</ul>
+	</li>
+
 
 		</ul>
+	</div>
 </nav>
 </header>
-<div class="container2">
-
- 	<div class="wrap container_12">
-
-
-		<div class="hero">
+<div class="wrap container_12">
+		<div class="phtos">
 	<article>
 	<img src="b.jpg">
 	</article>
@@ -76,7 +93,7 @@ a
 	<div class="primary grid_8"></div><br>
 
 	<h2> List of books</h2>
-
+<div class="jumbotron">
 <aside class ="cont clearfix">
 
 	<section class="grid_4">
@@ -115,7 +132,7 @@ a
 		</section>
 	</div>
 </aside>
-
+</div>
 <div class="fourthset new1 clearfix">
 	<section class="grid_12">
 		<h2> History of Books</h2>
@@ -126,10 +143,14 @@ a
 <div class="cont social clearfix">
 <footer class="foot">
 		<p>Follow us on</p>
-		<section>
-		<a href="#"><img src="google_plus.jpg" alt="google"></a>
-		<a href="#"><img src="fb.jpg" alt="facebook"></a>
-		<a href="#"><img src="twitter.jpg" alt="twitter"></a>
+		<section class="Container imag">
+		<a href="#" class="grid_3"><img src="google_plus.jpg" alt="google" style="width:50px;height:50px;"></a>
+		<a href="#"class="grid_3"><img src="fb.jpg" alt="facebook" style="width:50px;height:50px;"></a>
+		<a href="#" class="grid_3"><img src="twitter.jpg" alt="twitter" style="width:50px;height:50px;"></a>
 		</section>
 	</footer>
 </div>
+
+</div>
+</body>
+</html>
